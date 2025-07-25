@@ -1,0 +1,46 @@
+.composition{
+position: relative;
+width: 600px;
+height: 400px;
+background: url(/img/bg.jpg);
+}
+.planet {
+position: absolute;
+}
+.planet.planet-one {
+    top: 80px;
+    right: 110px;
+    z-index: 100;
+}
+.planet.planet-two {
+    left: 180px;
+    top: 20px;
+    z-index: 200;
+}
+.planet.planet-three {
+    left: 50px;
+    top: 70px;
+    z-index: 300;
+}
+.planet.planet-four {
+    left: 130px;
+    bottom: 20px;
+    z-index: 400;
+}
+.thing.one {
+    position: relative;
+    bottom: 280px;
+    left: 135px;
+    z-index: 350;
+}
+.thing.two {
+    position: relative;
+    left: 450px;
+    bottom: 75px;
+}
+.thing.three {
+    position: relative;
+    left: -10px;
+    bottom: 130px;
+    z-index: 500;
+}
