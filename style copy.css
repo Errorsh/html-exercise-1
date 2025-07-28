@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.text {
+    width: 400px;
+    margin: 0 auto;
+}
+.mask {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.modal {
+    width: 320px;
+    padding: 15px;
+    background-color: white;
+    position: fixed;
+    top: 75px;
+    left: 50%;
+    margin-left: -160px;
+}
+.btn {
+    border: none;
+    display: inline-block;
+    padding: 7px 15px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+.success {
+    background-color: #35bb27;
+    color: white;
+}
+.cancel {
+    background-color: #f9861f;
+    color: white;
+}
+.modal-close {
+    background: none;
+    border: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    cursor: pointer;
+    color: transparent;
+    background-image: url(./img/close.png);
+}
