@@ -1,25 +1,47 @@
-body {
-    font-family: Arial, sans-serif;
-    font-weight: 16px;
-    color: #333;
-    line-height: 1.5;
+.composition{
+position: relative;
+width: 600px;
+height: 400px;
+background: url(/img/bg.jpg);
+overflow: hidden;
 }
-.title {
-    font-size: 40px;
-    color: #f03333;
-    line-height: 1.2;
-    text-transform: uppercase;
+.planet {
+position: absolute;
 }
-.subtitle {
-    font-size: 30px;
-    color: #12ac11;
-    line-height: 1.2;
-    text-decoration: underline;
+.planet.planet-one {
+    top: 80px;
+    right: 110px;
+    z-index: 100;
 }
-.list {
-    font-size: 20px;
-    color: #444;
-    font-style: italic;
-    list-style-type: disc;
-
+.planet.planet-two {
+    left: 180px;
+    top: 20px;
+    z-index: 200;
+}
+.planet.planet-three {
+    left: 50px;
+    top: 70px;
+    z-index: 300;
+}
+.planet.planet-four {
+    left: 130px;
+    bottom: 20px;
+    z-index: 400;
+}
+.thing.one {
+    position: absolute;
+    bottom: 205px;
+    left: 140px;
+    z-index: 350;
+}
+.thing.two {
+    position: absolute;
+    left: 480px;
+    bottom: 0px;
+}
+.thing.three {
+    position: absolute;
+    left: 110px;
+    bottom: 50px;
+    z-index: 500;
 }
