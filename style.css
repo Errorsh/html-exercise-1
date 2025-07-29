@@ -13,18 +13,9 @@ body {
     width: 400px;
     margin: 0 auto;
 }
-.mask {
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
 .modal {
-    display: flex;
     flex-direction: column;
+    display: flex;
     width: 320px;
     padding: 15px;
     background-color: white;
@@ -32,23 +23,7 @@ body {
     top: 75px;
     left: 50%;
     margin-left: -160px;
-}
-.btn {
-    border: none;
-    display: inline-block;
-    padding: 7px 15px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: white;
-    cursor: pointer;
-}
-.success {
-    background-color: #35bb27;
-    
-}
-.cancel {
-    background-color: #f9861f;
-    
+
 }
 .modal-close {
     background: none;
@@ -62,8 +37,39 @@ body {
     right: -20px;
     cursor: pointer;
     color: transparent;
-    background-image: url(./img/close.png);
+    background-image: url(./img/close.png)
 }
-.flex {
-    row-gap: inherit;
+.btn {
+    border: none;
+    display: inline-block;
+    padding: 7px 15px ;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.cancel {
+    background-color: #f9861f;
+    order: 1;
+}
+
+.success {
+    background-color: #35bb27;
+    order: 2;
+}
+
+.mask {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
 }
