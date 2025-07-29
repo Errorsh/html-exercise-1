@@ -1,75 +1,54 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.text {
-    width: 400px;
+.product {
+    max-width: 350px;
     margin: 0 auto;
-}
-.modal {
-    flex-direction: column;
-    display: flex;
-    width: 320px;
-    padding: 15px;
-    background-color: white;
-    position: fixed;
-    top: 75px;
-    left: 50%;
-    margin-left: -160px;
+    background-color: #ffffff;
+    box-shadow: 0 0 76px rgba(231, 231, 231, 0.66);
+ }
 
+.product-header {
+  display: flex;
 }
-.modal-close {
+
+.product-header-left {
+    width: 25%;
+    margin: 2rem 0 0 ;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.product-header-left {
+    margin-bottom: 2.5rem;
+}
+.product-header-btn{
+    padding: 0px;
+    border: 0;
     background: none;
-    border: none;
-    outline: none;
-    width: 20px;
-    height: 20px;
-    background-position: center;
+    cursor: pointer;
+}
+.product-header-right {
+    width: 75%;
+    position: relative;
+}
+.product-label {
+    
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background-color: #333;
+    
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 50px;
+    font-weight: 500;
+
     position: absolute;
-    top: -20px;
-    right: -20px;
-    cursor: pointer;
-    color: transparent;
-    background-image: url(./img/close.png)
-}
-.btn {
-    border: none;
-    display: inline-block;
-    padding: 7px 15px ;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: white;
-    cursor: pointer;
-}
-
-.cancel {
-    background-color: #f9861f;
-    order: 1;
-}
-
-.success {
-    background-color: #35bb27;
-    order: 2;
-}
-
-.mask {
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-.buttons {
-    display: flex;
-    justify-content: flex-end;
-    gap: 5px;
+    left: -25px;
+    bottom: 1rem;
 }
