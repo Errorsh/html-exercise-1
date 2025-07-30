@@ -1,28 +1,37 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 20px;
+    color: #000;
 }
-.bruh-link {
-    color: #0b56ea;
-    text-decoration: none;
-}
-.bruh {
-    display: flex;
-    list-style: none;
+.box-wrapper {
+    display: inline-flex;
+    cursor: pointer;
 
-    padding: 0;
-    margin: 0;
 }
-.product {
-    color: #333;
+.hidden-box {
+    display: none;
 }
-.bruh-link:hover:not(span) {
-    text-decoration:underline;
+.custom-checkbox {
+    display: inline-flex;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    
+    border: 2px solid #ccc;
+    border-radius: 4px;
+
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+
+    transition: border-color 0.3s ease;
+
 }
-.bruh-element {
-    margin-right: 5px;
+.hidden-box:checked + .custom-checkbox {
+    background-image: url("image.png");
 }
-.bruh-element:not(:last-child):after {
-    content: ">";
-    margin-left: 5px;
+.box-wrapper:hover .custom-checkbox {
+  border-color: #888888;
 }
