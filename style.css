@@ -1,0 +1,41 @@
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+* {
+    box-sizing: border-box;
+}
+.nav {
+    text-align: center;
+    margin: 30px;
+}
+.page-nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    margin: 6px;
+
+    background-color: #ddd;
+    color: #333;
+
+    text-decoration: none;
+
+    transition: background-color 0.2s;
+
+}
+.page-nav:hover:not(.active) {
+    background-color: #ccc;
+}
+/* .page-nav:active {
+    background-color: #d10953;
+    color: #fff;
+} */
+.active {
+    background-color: #d10953;
+    color: #fff;
+    
+}
