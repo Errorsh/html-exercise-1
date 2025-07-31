@@ -25,14 +25,16 @@ body {
     width: 18px;
     height: 18px;
     border: 2px solid #ccc; 
-    border-radius: 100px;
+    border-radius: 50%;
 
     background-color: white;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px 20px;
 
-    transition: border-color 0.3 ease;
+    transition: border-color 0.3s ease;
+
+    cursor: pointer;
 
 }
 .hidden-radio:checked + .custom-radio {
