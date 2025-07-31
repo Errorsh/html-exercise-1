@@ -1,30 +1,24 @@
 body {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 10px;
     color: #000;
 }
-.styled-select {
+.btn {
+    display: inline-block;
+    font-size: 3em;
     cursor: pointer;
-    appearance: none;
+    
+    padding: 0.5em;
+    border-radius: 0.5em;
+    box-shadow: 0.1em 0.1em 0.6em 0.1em #b5b5b5;
 
-    width: 100%;
-    max-width: 180px;
-    height: 10%;
-    padding: 5px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 3px;
-
-    background-image: url("down-arrow-hand-drawn-outline-svgrepo-com.svg");
-    background-position: right 10px center;
-    background-color: #f8f6f6;
-    background-repeat: no-repeat;
-    background-size: 20px;
-
-    font-size: 16px;
-    color: #333; 
-    outline: none;
+    background: transparent;
+    background-color: #ccc;
+    border: none;
 }
-.styled-select:focus-visible {
-    outline: 2px solid #1cbc11;
+.sm {
+    font-size: 2em
+}
+.xl {
+    font-size: 4em;
 }
