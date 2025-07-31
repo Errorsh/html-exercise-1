@@ -1,45 +1,30 @@
 body {
     font-family: Arial, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: #000;
 }
-.radio {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3px;
-    gap: 5px;
-}
-.gender {
-    display: flex;
+.styled-select {
     cursor: pointer;
-    gap: 10px;
-    align-items: center;
-    
+    appearance: none;
 
-}
-.hidden-radio {
-    display: none;
-}
-.custom-radio {
-    display: inline-flex;
-    width: 18px;
-    height: 18px;
-    border: 2px solid #ccc; 
-    border-radius: 50%;
+    width: 100%;
+    max-width: 180px;
+    height: 10%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 3px;
 
-    background-color: white;
+    background-image: url("down-arrow-hand-drawn-outline-svgrepo-com.svg");
+    background-position: right 10px center;
+    background-color: #f8f6f6;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20px 20px;
+    background-size: 20px;
 
-    transition: border-color 0.3s ease;
-
-    cursor: pointer;
-
+    font-size: 16px;
+    color: #333; 
+    outline: none;
 }
-.hidden-radio:checked + .custom-radio {
-    background-image: url("image.png");
-}
-.custom-radio:hover {
-    border-color: #888888;
+.styled-select:focus-visible {
+    outline: 2px solid #1cbc11;
 }
