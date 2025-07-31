@@ -1,37 +1,43 @@
 body {
     font-family: Arial, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: #000;
 }
-.box-wrapper {
-    display: inline-flex;
+.radio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+    gap: 5px;
+}
+.gender {
+    display: flex;
     cursor: pointer;
+    gap: 10px;
+    align-items: center;
+    
 
 }
-.hidden-box {
+.hidden-radio {
     display: none;
 }
-.custom-checkbox {
+.custom-radio {
     display: inline-flex;
-
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-    
-    border: 2px solid #ccc;
-    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc; 
+    border-radius: 100px;
 
     background-color: white;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 24px 24px;
+    background-size: 20px 20px;
 
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3 ease;
 
 }
-.hidden-box:checked + .custom-checkbox {
+.hidden-radio:checked + .custom-radio {
     background-image: url("image.png");
 }
-.box-wrapper:hover .custom-checkbox {
-  border-color: #888888;
+.custom-radio:hover {
+    border-color: #888888;
 }
